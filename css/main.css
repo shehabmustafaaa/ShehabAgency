@@ -28,6 +28,9 @@ body {
 	min-height: 2000px;
 }
 
+section {
+	padding: 120px 0;
+}
 h1,
 h2,
 h3,
@@ -36,7 +39,39 @@ h5,
 h6 {
 	font-family: 'Raleway', sans-serif;
 }
-a,
+
+h4 {
+	font-size: 35px;
+	font-weight: 700;
+	letter-spacing: 1.2px;
+	position: relative;
+	border-left: #333;
+	padding-left: 10px;
+	margin-bottom: 40px;
+}
+h4 span {
+	font-weight: 300;
+}
+h4::before {
+	position: absolute;
+	content: '';
+	bottom: 0;
+	left: 0;
+	height: 40%;
+	width: 2px;
+	background-color: #f24259;
+}
+h4::after {
+	position: absolute;
+	content: '';
+	top: 0;
+	left: 0;
+	height: 60%;
+	width: 2px;
+	background-color: #eee;
+}
+
+h4 a,
 button,
 i:hover {
 	cursor: pointer;
@@ -45,6 +80,9 @@ a:hover,
 a {
 	text-decoration: none;
 	color: inherit;
+}
+.p-66 {
+	color: #666;
 }
 .button {
 	display: inline-block;
@@ -86,20 +124,43 @@ a {
 	transition: width 0.5s ease;
 }
 
+.curve {
+	position: relative;
+}
+.curve::before,
+.curve::after {
+	position: absolute;
+	content: '';
+	bottom: 0;
+}
+.curve::before {
+	left: 0;
+	width: 70vw;
+	border-bottom: 100px solid #f7f7f7;
+	border-right: 70vw solid transparent;
+}
+
+.curve::after {
+	right: 0;
+	width: 30vw;
+	border-bottom: 100px solid #f7f7f7;
+	border-left: 30vw solid transparent;
+}
 /* ============================== [01] Navbar  ==============================*/
 nav {
 	position: fixed;
 	background-color: transparent;
 	z-index: 9999;
 	color: #fff;
+	height: 58px;
 }
 nav.navbar-sticky {
 	position: fixed;
-	top: -57.11px;
+	top: -58px;
 	width: 100%;
 	background-color: #000;
 	transition: transform 0.5s;
-	transform: translateY(57.11px);
+	transform: translateY(+57px);
 }
 nav .navbar-brand span {
 	color: #f24259;
@@ -185,3 +246,83 @@ header::after {
 }
 
 /* ============================== [03] About  ==============================*/
+.about {
+	padding-bottom: 170px;
+}
+.about h5 {
+	font-weight: 300;
+	font-size: 30px;
+}
+.about h5 span {
+	font-weight: 600;
+}
+.about .skills {
+	padding-top: 122px;
+}
+.about .skills .progress-item p {
+	color: #666;
+	font-size: 12px;
+	font-weight: 600;
+}
+.about .skills .progress-item .percentage {
+	width: 100%;
+	height: 3px;
+	background-color: #eee;
+	position: relative;
+}
+.about .skills .progress-item .percentage span {
+	position: absolute;
+	content: '';
+	background-color: #f24259;
+	top: 0;
+	left: 0;
+	height: 3px;
+}
+.about .skills .progress-item .percentage span::before {
+	content: '50%';
+	position: absolute;
+	color: #666;
+	bottom: 0;
+	right: 0;
+	font-size: 12px;
+	padding-bottom: 5px;
+}
+
+/* ============================== [03] Services  ==============================*/
+.services {
+	background-color: #f7f7f7;
+}
+.services .service-item {
+	background-color: #fff;
+	padding: 60px 50px;
+	box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.05);
+}
+.services .service-item.active {
+	padding-top: 80px;
+	margin-top: -30px;
+}
+
+.services i {
+	font-size: 50px;
+	color: #666;
+}
+.services h5 {
+	font-weight: 600;
+}
+.services h6 {
+	color: #f24259;
+	font-style: italic;
+	font-weight: 400;
+}
+
+/* ============================== [03] Pprtfolio  ==============================*/
+
+.portfolio span {
+	font-weight: 700;
+	cursor: pointer;
+}
+
+.portfolio .gallery .items img {
+	height: 100%;
+	width: 100%;
+}
