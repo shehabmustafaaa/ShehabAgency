@@ -7,6 +7,7 @@
 		<title>Shehab Agency</title>
 		<link rel="stylesheet" href="css/bootstrap.min.css" />
 		<link rel="stylesheet" href="css/main.css" />
+		<link rel="stylesheet" href="css/magnific-popup.css" />
 		<link rel="stylesheet" href="css/all.min.css" />
 		<!-- Fonts -->
 		<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600" rel="stylesheet" />
@@ -15,33 +16,47 @@
 	<body>
 		<!-- ========================  [01] Navbar ======================== -->
 
-		<nav class="navbar navbar-expand-lg">
+		<nav class="navbar navbar-expand-lg navbar-dark">
 			<div class="container">
 				<a class="navbar-brand" href="#">
 					<img src="img/logo.png" alt="Logo" />
 					<span>Shehab Agency</span>
 				</a>
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarID" aria-controls="navbarID" aria-expanded="false" aria-label="Toggle navigation">
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
 				</button>
-				<div class="collapse navbar-collapse" id="navbarID">
-					<div class="navbar-nav ml-auto">
-						<a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-						<a class="nav-item nav-link" href="#" data-scroll="">Features</a>
-						<a class="nav-item nav-link" href="#" data-scroll="">About</a>
-						<a class="nav-item nav-link" href="#" data-scroll="">Services</a>
-						<a class="nav-item nav-link" href="#" data-scroll="">Portfolio</a>
-						<a class="nav-item nav-link" href="#" data-scroll="">Team</a>
-						<a class="nav-item nav-link" href="#" data-scroll="">Testimonials</a>
-						<a class="nav-item nav-link" href="#" data-scroll="">Price</a>
-						<a class="nav-item nav-link" href="#" data-scroll="">Contact</a>
-					</div>
+
+				<div class="collapse navbar-collapse" id="navbarNav">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item">
+							<a class="nav-link" href="#">Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#" data-scroll="about">About</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#" data-scroll="services">Services</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#" data-scroll="portfolio">Portfolio</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#" data-scroll="team">Team</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#" data-scroll="testimonials">Testimonials</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#" data-scroll="price">Price</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#" data-scroll="contact">Contact</a>
+						</li>
+					</ul>
 				</div>
 			</div>
 		</nav>
-
 		<!-- ========================  [02] Header ======================== -->
-
 		<header>
 			<div id="carouselID" class="carousel slide" data-ride="carousel">
 				<ol class="carousel-indicators">
@@ -176,7 +191,7 @@
 			</div>
 		</section>
 		<!-- ========================  [05] Portfolio ======================== -->
-		<section class="portfolio">
+		<section class="portfolio curve">
 			<div class="container">
 				<h4>
 					<span>Our</span> <br />
@@ -192,22 +207,153 @@
 				<div class="gallery">
 					<div class="row">
 						<div class="items design col-sm-6 col-md-4 mb-4">
-							<img class="item-img" src="img/1.jpg" />
-						</div>
-						<div class="items graphic col-sm-6 col-md-4 mb-4">
-							<img class="item-img" src="img/2.jpg" />
-						</div>
-						<div class="items marketing col-sm-6 col-md-4 mb-4">
-							<img class="item-img" src="img/3.jpg" />
-						</div>
-						<div class="items graphic col-sm-6 col-md-4 mb-4">
-							<img class="item-img" src="img/4.jpg" />
-						</div>
-						<div class="items marketing col-sm-6 col-md-4 mb-4">
-							<img class="item-img" src="img/5.jpg" />
+							<img class="item-img w-100" src="img/1.jpg" />
+							<div class="item-img-overlay">
+								<div class="overlay-info">
+									<p>Logo | Branding</p>
+									<h6>Creative Web Design</h6>
+									<a href="img/1.jpg">
+										<i class="far fa-arrow-alt-circle-right"></i>
+									</a>
+								</div>
+							</div>
 						</div>
 						<div class="items design col-sm-6 col-md-4 mb-4">
-							<img class="item-img" src="img/6.jpg" />
+							<img class="item-img w-100" src="img/2.jpg" />
+							<div class="item-img-overlay">
+								<div class="overlay-info">
+									<p>Logo | Branding</p>
+									<h6>Creative Web Design</h6>
+									<a href="img/2.jpg">
+										<i class="far fa-arrow-alt-circle-right"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="items design col-sm-6 col-md-4 mb-4">
+							<img class="item-img w-100" src="img/3.jpg" />
+							<div class="item-img-overlay">
+								<div class="overlay-info">
+									<p>Logo | Branding</p>
+									<h6>Creative Web Design</h6>
+									<a href="img/3.jpg">
+										<i class="far fa-arrow-alt-circle-right"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="items design col-sm-6 col-md-4 mb-4">
+							<img class="item-img w-100" src="img/4.jpg" />
+							<div class="item-img-overlay">
+								<div class="overlay-info">
+									<p>Logo | Branding</p>
+									<h6>Creative Web Design</h6>
+									<a href="img/4.jpg">
+										<i class="far fa-arrow-alt-circle-right"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="items design col-sm-6 col-md-4 mb-4">
+							<img class="item-img w-100" src="img/5.jpg" />
+							<div class="item-img-overlay">
+								<div class="overlay-info">
+									<p>Logo | Branding</p>
+									<h6>Creative Web Design</h6>
+									<a href="img/5.jpg">
+										<i class="far fa-arrow-alt-circle-right"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="items design col-sm-6 col-md-4 mb-4">
+							<img class="item-img w-100" src="img/6.jpg" />
+							<div class="item-img-overlay">
+								<div class="overlay-info">
+									<p>Logo | Branding</p>
+									<h6>Creative Web Design</h6>
+									<a href="img/6.jpg">
+										<i class="far fa-arrow-alt-circle-right"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- ========================  [06] Team ======================== -->
+		<section class="team">
+			<div class="container">
+				<div class="offset-2 col-8">
+					<h4><span>Our</span>Team</h4>
+					<p class="p-66 mb-5">We are a passionate digital design agency that specializes in beautiful and easy-to-use digital design & web development services.</p>
+				</div>
+				<div class="team-members">
+					<div class="row">
+						<div class="item col-sm-6 col-md-3">
+							<div class="item-img">
+								<img class="w-100" src="img/team1.jpg" alt="Team" />
+								<div class="item-overlay">
+									<div class="social-media">
+										<i class="fab fa-facebook-f"><a href="#"></a></i>
+										<i class="fab fa-twitter"><a href="#"></a></i>
+										<i class="fab fa-behance"><a href="#"></a></i>
+									</div>
+								</div>
+							</div>
+							<div class="item-info mt-2">
+								<h6 class="font-weight-bolder">Shehab Mustafa</h6>
+								<p class="p-66">Project Manager</p>
+							</div>
+						</div>
+						<div class="item col-sm-6 col-md-3">
+							<div class="item-img">
+								<img class="w-100" src="img/team2.jpg" alt="Team" />
+								<div class="item-overlay">
+									<div class="social-media">
+										<i class="fab fa-facebook-f"><a href="#"></a></i>
+										<i class="fab fa-twitter"><a href="#"></a></i>
+										<i class="fab fa-behance"><a href="#"></a></i>
+									</div>
+								</div>
+							</div>
+							<div class="item-info mt-2">
+								<h6 class="font-weight-bolder">Shehab Mustafa</h6>
+								<p class="p-66">Project Manager</p>
+							</div>
+						</div>
+						<div class="item col-sm-6 col-md-3">
+							<div class="item-img">
+								<img class="w-100" src="img/team3.jpg" alt="Team" />
+								<div class="item-overlay">
+									<div class="social-media">
+										<i class="fab fa-facebook-f"><a href="#"></a></i>
+										<i class="fab fa-twitter"><a href="#"></a></i>
+										<i class="fab fa-behance"><a href="#"></a></i>
+									</div>
+								</div>
+							</div>
+							<div class="item-info mt-2">
+								<h6 class="font-weight-bolder">Shehab Mustafa</h6>
+								<p class="p-66">Project Manager</p>
+							</div>
+						</div>
+						<div class="item col-sm-6 col-md-3">
+							<div class="item-img">
+								<img class="w-100" src="img/team4.jpg" alt="Team" />
+								<div class="item-overlay">
+									<div class="social-media">
+										<i class="fab fa-facebook-f"><a href="#"></a></i>
+										<i class="fab fa-twitter"><a href="#"></a></i>
+										<i class="fab fa-behance"><a href="#"></a></i>
+									</div>
+								</div>
+							</div>
+							<div class="item-info mt-2">
+								<h6 class="font-weight-bolder">Shehab Mustafa</h6>
+								<p class="p-66">Project Manager</p>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -217,6 +363,7 @@
 		<script src="js/popper.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
 		<script src="js/isotope.pkgd.min.js"></script>
+		<script src="js/jquery.magnific-popup.min.js"></script>
 		<script src="js/main.js"></script>
 	</body>
 </html>

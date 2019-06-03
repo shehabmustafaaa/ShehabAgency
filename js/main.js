@@ -10,6 +10,8 @@ $(function() {
 		} else $('nav').removeClass('navbar-sticky');
 	});
 
+	// Sync Section active
+	$('section').each(function() {});
 	/* ============================== [02] Header  ==============================*/
 
 	$('header').css('margin-top', -navH);
@@ -54,6 +56,12 @@ $(function() {
 		$gallery.isotope({ filter: filterValue });
 	});
 
-
-	
+	// magnificPopup
+	$('.gallery').magnificPopup({
+		delegate: 'a',
+		type: 'image',
+		gallery: {
+			enabled: true
+		}
+	});
 });
