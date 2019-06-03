@@ -136,14 +136,14 @@ a {
 .curve::before {
 	left: 0;
 	width: 70vw;
-	border-bottom: 100px solid #f7f7f7;
+	border-bottom: 100px solid;
 	border-right: 70vw solid transparent;
 }
 
 .curve::after {
 	right: 0;
 	width: 30vw;
-	border-bottom: 100px solid #f7f7f7;
+	border-bottom: 100px solid;
 	border-left: 30vw solid transparent;
 }
 /* ============================== [01] Navbar  ==============================*/
@@ -161,6 +161,10 @@ nav.navbar-sticky {
 	background-color: #000;
 	transition: transform 0.5s;
 	transform: translateY(+57px);
+}
+nav .navbar-brand img {
+	width:30px;
+	height:30px;
 }
 nav .navbar-brand span {
 	color: #f24259;
@@ -287,8 +291,14 @@ header::after {
 	font-size: 12px;
 	padding-bottom: 5px;
 }
+.about.curve::after {
+	border-bottom-color: #f7f7f7;
+}
+.about.curve::before {
+	border-bottom-color: #f7f7f7;
+}
 
-/* ============================== [03] Services  ==============================*/
+/* ============================== [04] Services  ==============================*/
 .services {
 	background-color: #f7f7f7;
 }
@@ -314,14 +324,27 @@ header::after {
 	font-style: italic;
 	font-weight: 400;
 }
-
-/* ============================== [03] Pprtfolio  ==============================*/
+.services.curve::after {
+	border-bottom-color: #fff;
+}
+.services.curve::before {
+	border-bottom-color: #fff;
+}
+/* ============================== [05] Portfolio  ==============================*/
 
 .portfolio span {
 	font-weight: 700;
 	cursor: pointer;
+	margin-right: 5px;
 }
-
+.portfolio span.active,
+.portfolio span:hover {
+	color: #f24259;
+	border-bottom: 2px solid #f24259;
+}
+.portfolio .gallery .items {
+	padding-right: 5px;
+}
 .portfolio .gallery .items img {
 	height: 100%;
 	width: 100%;
