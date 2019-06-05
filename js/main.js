@@ -1,4 +1,4 @@
-/* global $ */
+/* global $  */
 $(function() {
 	var winH = $(window).height(),
 		navH = $('nav').innerHeight();
@@ -63,5 +63,35 @@ $(function() {
 		gallery: {
 			enabled: true
 		}
+	});
+
+	/* ============================== [12] Sldie to Top  ==============================*/
+	$('.slide-to-top').on('click', function(e) {
+		e.preventDefault();
+		$('body,html').animate(
+			{
+				scrollTop: 0
+			},
+			1000
+		);
+	});
+
+	$(window).on('scroll', function() {
+		if ($(window).scrollTop() > 250) {
+			$('.slide-to-top').css('right', '2%');
+		} else {
+			$('.slide-to-top').css('right', '-100px');
+		}
+	});
+
+	$('nav .navbar-nav .nav-link').click(function(e) {
+		e.preventDefault();
+		var dScroll = $(this).data('scroll');
+		$('html,body').animate(
+			{
+				scrollTop: $(dScroll).offset().top
+			},
+			800
+		);
 	});
 });
