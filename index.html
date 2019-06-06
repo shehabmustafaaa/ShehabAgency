@@ -29,35 +29,35 @@
 				<div class="collapse navbar-collapse" id="navbarNav">
 					<ul class="navbar-nav ml-auto">
 						<li class="nav-item">
-							<a class="nav-link active" href="#"">Home</a>
+							<a class="nav-link active" href="#" data-scroll="#home">Home</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#" data-scroll=".about">About</a>
+							<a class="nav-link" href="#" data-scroll="#about">About</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#" data-scroll=".services">Services</a>
+							<a class="nav-link" href="#" data-scroll="#services">Services</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#" data-scroll=".portfolio">Portfolio</a>
+							<a class="nav-link" href="#" data-scroll="#portfolio">Portfolio</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#" data-scroll=".team">Team</a>
+							<a class="nav-link" href="#" data-scroll="#team">Team</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#" data-scroll=".testimonials">Testimonials</a>
+							<a class="nav-link" href="#" data-scroll="#testimonials">Testimonials</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#" data-scroll=".price">Price</a>
+							<a class="nav-link" href="#" data-scroll="#price">Price</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#" data-scroll=".contact">Contact</a>
+							<a class="nav-link" href="#" data-scroll="#contact">Contact</a>
 						</li>
 					</ul>
 				</div>
 			</div>
 		</nav>
 		<!-- ========================  [02] Header ======================== -->
-		<header>
+		<header id="home">
 			<div id="carouselID" class="carousel slide" data-ride="carousel">
 				<ol class="carousel-indicators">
 					<li data-target="#carouselID" data-slide-to="0" class="active"></li>
@@ -108,7 +108,7 @@
 			</div>
 		</header>
 		<!-- ========================  [03] About ======================== -->
-		<section class="about curve-bottom">
+		<section class="about curve-bottom" id="about">
 			<div class="container">
 				<div class="row">
 					<div class="text-center offset-2 col-8">
@@ -162,7 +162,7 @@
 		</section>
 
 		<!-- ========================  [04] Services ======================== -->
-		<section class="services">
+		<section class="services" id="services">
 			<div class="container">
 				<h4>
 					<span>Our</span> <br />
@@ -191,7 +191,7 @@
 			</div>
 		</section>
 		<!-- ========================  [05] Portfolio ======================== -->
-		<section class="portfolio curve-bottom">
+		<section class="portfolio curve-bottom" id="portfolio">
 			<div class="container">
 				<h4>
 					<span>Our</span> <br />
@@ -284,7 +284,7 @@
 		</section>
 
 		<!-- ========================  [06] Team ======================== -->
-		<section class="team">
+		<section class="team" id="team">
 			<div class="container">
 				<div class="row">
 					<div class="col-12">
@@ -364,7 +364,7 @@
 		</section>
 
 		<!-- ========================  [07] Testimonails ======================== -->
-		<section class="testimonials" data-dark>
+		<section class="testimonials" id="testimonials" data-dark>
 			<div class="container">
 				<div class="bd-example">
 					<div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
@@ -412,7 +412,7 @@
 			</div>
 		</section>
 		<!-- ========================  [08] Price ======================== -->
-		<section class="price">
+		<section class="price" id="price">
 			<div class="container">
 				<div class="row">
 					<div class="col-12">
@@ -495,7 +495,7 @@
 		</section>
 
 		<!-- ========================  [09] Contact ======================== -->
-		<section class="contact">
+		<section class="contact" id="conact">
 			<div class="container-fluid">
 				<div class="row">
 					<div class="col-sm-12 col-md-6">
@@ -602,9 +602,18 @@
 				</div>
 			</div>
 		</section>
-		<!-- ========================  [12] Slide to Top ======================== -->
+
+		<!-- ========================  [11] Slide to Top ======================== -->
 		<div class="slide-to-top">
 			<i class="fas fa-long-arrow-alt-up"></i>
+		</div>
+		<!-- ========================  [12] Loading Page ======================== -->
+		<div class="loading-page">
+			<div class="spinner">
+				<div class="bounce1"></div>
+				<div class="bounce2"></div>
+				<div class="bounce3"></div>
+			</div>
 		</div>
 		<script src="js/jquery-3.3.1.js"></script>
 		<script src="js/popper.min.js"></script>
